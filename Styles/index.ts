@@ -73,7 +73,7 @@ export const PromoCardStyles = StyleSheet.create({
         overflow: 'hidden',
         height: 150,
         position: 'relative',
-        zIndex: 5
+        zIndex: 5,
     },
     image: {
         width: '100%',

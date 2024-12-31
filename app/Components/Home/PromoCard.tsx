@@ -5,7 +5,7 @@ const jacket_2 = require('@/assets/images/jacket-2.png');
 
 export default function PromoCard() {
     return (
-        <View>
+        <View style={{ marginBottom: 30, position: 'relative' }}>
             <View style={PromoCardStyles.container}>
                 <View style={PromoCardStyles.textContainer}>
                     <Text style={PromoCardStyles.title}>

@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import SearchBar from '../Components/Home/SearchBar';
 import FavouriteBtn from '../Components/Home/FavouriteBtn';
 import PromoCard from '../Components/Home/PromoCard';
+import CategorySection from '../Components/Home/CategorySection';
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
         <FavouriteBtn />
       </View>
       <PromoCard />
+      <CategorySection />
     </SafeAreaView>
   );
 }
