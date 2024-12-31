@@ -28,5 +28,5 @@ export default function CategorySection() {
                 ))}
             </ScrollView>
         </View>
-    )
+    );
 }

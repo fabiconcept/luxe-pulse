@@ -5,6 +5,8 @@ import SearchBar from '../Components/Home/SearchBar';
 import FavouriteBtn from '../Components/Home/FavouriteBtn';
 import PromoCard from '../Components/Home/PromoCard';
 import CategorySection from '../Components/Home/CategorySection';
+import RecommendedStylesSection from '../Components/Home/RecommendedStylesSection';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Index() {
   return (
@@ -13,8 +15,13 @@ export default function Index() {
         <SearchBar />
         <FavouriteBtn />
       </View>
-      <PromoCard />
-      <CategorySection />
+      <ScrollView
+            showsVerticalScrollIndicator={false}
+      >
+        <PromoCard />
+        <CategorySection />
+        <RecommendedStylesSection />
+      </ScrollView>
     </SafeAreaView>
   );
 }

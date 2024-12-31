@@ -1,7 +1,8 @@
-import { View, TouchableOpacity, StyleSheet, Dimensions, Text } from 'react-native';
+import { TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { usePathname, useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
+import BlurView from './BlurView';
 
 const TABS = [
   {
@@ -31,7 +32,7 @@ export function TabBar({ navigation }: BottomTabBarProps) {
   const router = useRouter();
 
   return (
-    <View style={styles.container}>
+    <BlurView intensity={100} style={styles.container}>
       {TABS.map((tab, index) => {
         const isActive = pathname === `/${tab.path}` || (pathname === '/' && tab.path === '');
         return (
@@ -46,13 +47,13 @@ export function TabBar({ navigation }: BottomTabBarProps) {
             <Ionicons
               name={`${tab.icon}${isActive ? '' : '-outline'}`}
               size={24}
-              color={isActive ? '#007AFF' : '#8E8E93'}
+              color={isActive ? '#000' : '#8E8E93'}
             />
             
           </TouchableOpacity>
         );
       })}
-    </View>
+    </BlurView>
   );
 }
 
@@ -67,7 +68,6 @@ const styles = StyleSheet.create({
     left: '5%',
     borderRadius: 50,
     overflow: 'hidden',
-    backgroundColor: '#ffffff88',
     backdropFilter: 'blur(10px)',
     gap: 1,
   },
