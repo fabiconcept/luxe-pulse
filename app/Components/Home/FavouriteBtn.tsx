@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Ionicons } from '@expo/vector-icons'
+import { View } from 'react-native';
+import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { FavouriteStyles } from '@/Styles';
 
 export default function FavouriteBtn() {
     return (
-        <View style={styles.btn}>
+        <View style={FavouriteStyles.btn}>
             <Ionicons
                 name="heart-outline"
                 size={24}
@@ -13,16 +14,3 @@ export default function FavouriteBtn() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    btn: {
-        padding: 7,
-        aspectRatio: 1,
-        backgroundColor: "#fff",
-        borderRadius: "50%",
-        alignItems: "center",
-        justifyContent: "center",
-        borderWidth: StyleSheet.hairlineWidth,
-        borderColor: "#8E8E9355",
-    }
-})

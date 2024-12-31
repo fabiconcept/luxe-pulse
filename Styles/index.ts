@@ -49,3 +49,17 @@ export const SearchBarstyles = StyleSheet.create({
         justifyContent: "center",
     }
 });
+
+
+export const FavouriteStyles = StyleSheet.create({
+    btn: {
+        padding: 7,
+        aspectRatio: 1,
+        backgroundColor: "#fff",
+        borderRadius: "50%",
+        alignItems: "center",
+        justifyContent: "center",
+        borderWidth: StyleSheet.hairlineWidth,
+        borderColor: "#8E8E9355",
+    }
+})

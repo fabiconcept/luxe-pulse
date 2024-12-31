@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { TextInput } from 'react-native-gesture-handler'
-import { Ionicons } from '@expo/vector-icons'
-import { SearchBarstyles } from '@/Styles'
+import { View, TextInput } from 'react-native';
+import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { SearchBarstyles } from '@/Styles';
 
 export default function SearchBar() {
     return (
@@ -11,10 +10,10 @@ export default function SearchBar() {
                 placeholder="Search here..."
                 style={SearchBarstyles.input}
             />
-            <View style={SearchBarstyles.btn}>
+            <View style={[SearchBarstyles.btn, { padding: 10}]}>
                 <Ionicons
                     name="search"
-                    size={24}
+                    size={20}
                     color="black"
                 />
             </View>
