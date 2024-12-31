@@ -59,8 +59,8 @@ export function TabBar({ navigation }: BottomTabBarProps) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: '#8E8E93',
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: '#8E8E9355',
     position: 'absolute',
     bottom: "3%",
     width: '90%',

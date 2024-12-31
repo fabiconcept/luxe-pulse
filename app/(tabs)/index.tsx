@@ -1,24 +1,17 @@
-import { ThemedText } from '@/components/ThemedText';
-import { StyleSheet, Text, View } from 'react-native';
+import { IndexStyles } from '@/Styles';
+import { View, } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import SearchBar from '../Components/Home/SearchBar';
+import FavouriteBtn from '../Components/Home/FavouriteBtn';
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <ThemedText style={styles.title}>Welcome to LuxePulse</ThemedText>
-    </View>
+    <SafeAreaView style={IndexStyles.container}>
+      <View style={IndexStyles.header}>
+        <SearchBar />
+        <FavouriteBtn />
+      </View>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-    backgroundColor: 'plum',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
