@@ -1,6 +1,7 @@
 import { Link } from 'expo-router';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import CategoryItem from './CategoryItem';
+import { CategoryStyles } from '@/Styles';
 
 const categories = [
     { id: 1, title: 'T-Shirts', icon: 'tshirt' },
@@ -12,15 +13,15 @@ const categories = [
 
 export default function CategorySection() {
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.headerText}>Select by Category</Text>
-                <Link style={styles.link} href={"/explore"}>See All</Link>
+        <View style={CategoryStyles.container}>
+            <View style={CategoryStyles.header}>
+                <Text style={CategoryStyles.headerText}>Select by Category</Text>
+                <Link style={CategoryStyles.link} href={"/explore"}>See All</Link>
             </View>
             <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.scrollViewContainer}
+                contentContainerStyle={CategoryStyles.scrollViewContainer}
             >
                 {categories.map((category) => (
                     <CategoryItem key={category.id} category={category} />
@@ -29,29 +30,3 @@ export default function CategorySection() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        marginTop: 10,
-        position: 'relative',
-    },
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        paddingHorizontal: 15,
-        marginBottom: 20
-    },
-    link: {
-        color: '#FFC10B',
-        fontWeight: 600
-    },
-    headerText: {
-        fontSize: 14,
-        fontWeight: 600
-    },
-    scrollViewContainer: {
-        gap: 10,
-        paddingHorizontal: 5
-    }
-})

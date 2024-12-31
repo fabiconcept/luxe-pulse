@@ -136,3 +136,29 @@ export const PromoCardStyles = StyleSheet.create({
         borderRadius: 20,
     },
 });
+
+export const CategoryStyles = StyleSheet.create({
+    container: {
+        marginTop: 10,
+        position: 'relative',
+    },
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 15,
+        marginBottom: 20
+    },
+    link: {
+        color: '#FFC10B',
+        fontWeight: 600
+    },
+    headerText: {
+        fontSize: 14,
+        fontWeight: 600
+    },
+    scrollViewContainer: {
+        gap: 10,
+        paddingHorizontal: 5
+    }
+})
