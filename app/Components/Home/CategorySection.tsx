@@ -9,6 +9,11 @@ const categories = [
     { id: 3, title: 'Jackets', icon: 'jacket' },
     { id: 4, title: 'Hats', icon: 'hat' },
     { id: 5, title: 'Shoes', icon: 'shoe' },
+    { id: 6, title: 'Dresses', icon: 'dress' },
+    { id: 7, title: 'Skirts', icon: 'skirt' },
+    { id: 8, title: 'Shorts', icon: 'shorts' },
+    { id: 9, title: 'Sweaters', icon: 'sweater' },
+    { id: 10, title: 'Coats', icon: 'coat' },
 ];
 
 export default function CategorySection() {

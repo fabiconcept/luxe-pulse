@@ -12,9 +12,12 @@ export default function CategoryItem({ category }: {
     return (
         <Link href={`/explore`}>
             <View style={styles.container}>
-                <View style={styles.imageContainer}>
+                <View style={[styles.imageContainer, {
+                    backgroundColor: `hsl(${Math.random() * 360}, 70%, 85%)`
+                }]}>
+                    <Text style={{ fontSize: 20, fontWeight: 'bold', fontFamily: 'Gilroy-Bold' }}>{(category.icon).slice(0, 1).toUpperCase()}</Text>
                 </View>
-                <Text>{category.title}</Text>
+                <Text style={{ fontSize: 14, fontFamily: 'Gilroy-Medium' }}>{category.title}</Text>
             </View>
         </Link>
     )
