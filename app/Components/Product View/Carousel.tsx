@@ -10,7 +10,7 @@ const carouselImages: ImageSourcePropType[] = [
 ];
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
-const ITEM_WIDTH = 80.5; // 70px width + 10px total horizontal margin
+const ITEM_WIDTH = 82.5; // 70px width + 10px total horizontal margin
 
 export default function Carousel() {
     const [selectedImage, setSelectedImage] = useState(carouselImages[0]);
