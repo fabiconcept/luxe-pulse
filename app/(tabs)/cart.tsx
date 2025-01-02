@@ -1,11 +1,19 @@
-import { ThemedText } from '@/components/ThemedText';
-import { StyleSheet, Text, View } from 'react-native';
+import { CategoryStyles, IndexStyles } from '@/Styles';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import FavouriteBtn from '../Components/Home/FavouriteBtn';
 
 export default function Cart() {
   return (
-    <View style={styles.container}>
-      <ThemedText style={styles.title}>Cart</ThemedText>
-    </View>
+    <SafeAreaView style={IndexStyles.container}>
+      <View style={CategoryStyles.header}>
+        <Text style={[CategoryStyles.headerText]}>Cart (03)</Text>
+        <FavouriteBtn extraStyle={{ padding: 10 }} />
+      </View>
+      <ScrollView>
+
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
