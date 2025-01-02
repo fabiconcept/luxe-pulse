@@ -11,12 +11,7 @@ export default function Cart() {
         <Text style={[CategoryStyles.headerText]}>Cart (03)</Text>
         <FavouriteBtn extraStyle={{ padding: 10 }} />
       </View>
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ flexGrow: 1 }}
-      > 
-        <Items />
-      </ScrollView>
+      <Items />
     </SafeAreaView>
   );
 }
