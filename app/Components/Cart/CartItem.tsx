@@ -1,4 +1,5 @@
 import { FontAwesome6 } from '@expo/vector-icons'
+import { Link } from 'expo-router';
 import { useState } from 'react';
 import { Dimensions, Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import { PanGestureHandler } from 'react-native-gesture-handler';
@@ -17,11 +18,9 @@ export default function CartItem({
     title,
     price,
     image,
-    rating,
     bgColor,
     size,
     color,
-    id
 }: {
     id: number,
     title: string,
@@ -93,12 +92,14 @@ export default function CartItem({
                 failOffsetY={[-5, 5]}
             >
                 <Animated.View style={[styles.container, rStyle]}>
-                    <View style={[styles.imageContainer, { backgroundColor: bgColor }]}>
-                        <Image
-                            source={image}
-                            style={styles.image}
-                        />
-                    </View>
+                    <Link href={"/productView"}>
+                        <View style={[styles.imageContainer, { backgroundColor: bgColor }]}>
+                            <Image
+                                source={image}
+                                style={styles.image}
+                            />
+                        </View>
+                    </Link>
                     <View style={{ flex: 1, gap: 10 }}>
                         <Text style={styles.title}>{title}</Text>
                         <View style={{ gap: 8 }}>
