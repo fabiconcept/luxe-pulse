@@ -1,24 +1,22 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
+import { IndexStyles } from '@/Styles';
+import SearchBar from '../Components/Home/SearchBar';
+import FavouriteBtn from '../Components/Home/FavouriteBtn';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import CategorySection from '../Components/Explore/CategorySection';
 
 export default function Explore() {
     return (
-        <View style={styles.container}>
-            <ThemedText style={styles.title}>Explore</ThemedText>
-        </View>
+        <SafeAreaView style={IndexStyles.container}>
+            <View style={[IndexStyles.header, { paddingBottom: 10 }]}>
+                <SearchBar />
+                <FavouriteBtn />
+            </View>
+            <CategorySection />
+        </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: "#F9F4EC"
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: '#FFC10B'
-    },
+    
 })
