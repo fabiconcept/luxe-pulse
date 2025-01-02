@@ -32,7 +32,7 @@ export function TabBar({ navigation }: BottomTabBarProps) {
   const router = useRouter();
 
   return (
-    <BlurView intensity={100} style={styles.container}>
+    <BlurView intensity={Platform.OS === 'ios' ? 100 : 135} style={styles.container}>
       {TABS.map((tab, index) => {
         const isActive = pathname === `/${tab.path}` || (pathname === '/' && tab.path === '');
         return (
