@@ -162,3 +162,35 @@ export const CategoryStyles = StyleSheet.create({
         paddingHorizontal: 5
     }
 })
+
+export const ProductsSectionStyles = StyleSheet.create({
+    container: {
+        marginTop: 30,
+        marginBottom: 90
+    },
+    bentoGrid: {
+        flexDirection: 'row',
+        gap: 10
+    },
+    bentoItem: {
+        flex: 1,
+        alignItems: 'flex-start',
+        gap: 10,
+    },
+    filter: {  
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: 10,
+        paddingLeft: 15,
+        paddingRight: 2.5,
+        paddingVertical: 2.5,
+        backgroundColor: '#000',
+        borderRadius: 50,
+    },
+    filterBtn: {
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 50,
+    }
+})

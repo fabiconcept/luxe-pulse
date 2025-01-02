@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import { TabBar } from '@/components/TabBar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function TabLayout() {
   return (
