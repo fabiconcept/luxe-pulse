@@ -14,7 +14,6 @@ export default function BentoItem({ product }: {
     }
 }) {
     const [isLiked, setIsLiked] = React.useState(false);
-    const [isHovered, setIsHovered] = React.useState(false);
     
     const handleLike = () => {
         setIsLiked(!isLiked);
@@ -23,8 +22,6 @@ export default function BentoItem({ product }: {
     return (
         <View 
             style={[styles.container, { backgroundColor: product.bgColor }]}
-            onTouchStart={() => setIsHovered(true)}
-            onTouchEnd={() => setIsHovered(false)}
         >
             <Image
                 source={product.image}
@@ -53,12 +50,10 @@ export default function BentoItem({ product }: {
                     </View>
                 </Pressable>
             </View>
-            {isHovered && (
-                <BlurView intensity={30} tint="dark" style={styles.informationCard}>
-                    <Text style={styles.title}>{product.title}</Text>
-                    <Text style={styles.price}>${product.price}</Text>
-                </BlurView>
-            )}
+            <BlurView intensity={30} tint="dark" style={styles.informationCard}>
+                <Text style={styles.title}>{product.title}</Text>
+                <Text style={styles.price}>${product.price}</Text>
+            </BlurView>
         </View>
     )
 }
@@ -122,7 +117,7 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#fff',
-        fontSize: 16,
+        fontSize: 14,
     },
     price: {
         color: '#fff',
