@@ -7,12 +7,10 @@ const carouselImages: ImageSourcePropType[] = [
     require("@/assets/images/jacket-3.png"),
     require("@/assets/images/jacket-4.png"),
     require("@/assets/images/jacket-5.png"),
-    require("@/assets/images/jacket-5.png"),
-    require("@/assets/images/jacket-5.png"),
 ];
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
-const ITEM_WIDTH = 81.5; // 70px width + 10px total horizontal margin
+const ITEM_WIDTH = 80.5; // 70px width + 10px total horizontal margin
 
 export default function Carousel() {
     const [selectedImage, setSelectedImage] = useState(carouselImages[0]);
@@ -99,9 +97,9 @@ export default function Carousel() {
 
 const styles = StyleSheet.create({
     productView: {
-        backgroundColor: "#ff000009",
+        backgroundColor: "#F9F4EC",
         width: SCREEN_WIDTH,
-        paddingVertical: 20
+        paddingVertical: 20,
     },
     productViewImg: {
         width: '60%',
@@ -121,18 +119,16 @@ const styles = StyleSheet.create({
         height: 70,
         borderRadius: 40,
         backgroundColor: "#fff",
-        borderWidth: 1,
-        borderColor: '#8E8E9355',
         overflow: 'hidden',
         alignItems: 'center',
         justifyContent: 'center',
-        marginHorizontal: 5
+        marginHorizontal: 2.5
     },
     selectedItem: {
         borderColor: '#FFC10B',
         borderWidth: 1,
         transform: [{ scale: 1.3 }, { translateY: -8 }],
-        marginHorizontal: 10
+        marginHorizontal: 15
     },
     carouselImage: {
         width: '80%',

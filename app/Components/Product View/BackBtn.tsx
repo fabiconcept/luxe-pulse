@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, View } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 
@@ -27,6 +27,20 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "white",
         borderRadius: 50,
-        aspectRatio: 1
+        aspectRatio: 1,
+        shadowColor: "#00000055",
+        ...Platform.select({
+            ios: {
+                shadowOffset: {
+                    width: 0,
+                    height: 2,
+                },
+                shadowOpacity: 0.15,
+                shadowRadius: 3.84,
+            },
+            android: {
+                elevation: 10,
+            },
+        }),
     }
 })
