@@ -41,7 +41,7 @@ const demoProducts = [
     },
     {
         id: 5,
-        title: 'Color Product Hoodie',
+        title: 'Urban Streetwear',
         price: '69.99',
         image: require('@/assets/images/jacket-5.png'),
         rating: 4.6,
@@ -49,7 +49,7 @@ const demoProducts = [
     },
     {
         id: 6,
-        title: 'Watch',
+        title: 'Denim Essential',
         price: '99.99',
         image: require('@/assets/images/jacket-1.png'),
         rating: 4.6,
@@ -57,7 +57,7 @@ const demoProducts = [
     },
     {
         id: 7,
-        title: 'Sunglasses',
+        title: 'Vintage Bomber',
         price: '19.99',
         image: require('@/assets/images/jacket-2.png'),
         rating: 4.6,
@@ -65,7 +65,7 @@ const demoProducts = [
     },
     {
         id: 8,
-        title: 'Belt',
+        title: 'Athletic Fusion',
         price: '14.99',
         image: require('@/assets/images/jacket-3.png'),
         rating: 4.6,
@@ -73,7 +73,7 @@ const demoProducts = [
     },
     {
         id: 9,
-        title: 'Sock',
+        title: 'Modern Classic',
         price: '5.99',
         image: require('@/assets/images/jacket-4.png'),
         rating: 4.6,
@@ -81,14 +81,13 @@ const demoProducts = [
     },
     {
         id: 10,
-        title: 'Tie',
+        title: 'Metro Style',
         price: '7.99',
         image: require('@/assets/images/jacket-5.png'),
         rating: 4.6,
         bgColor: "#00000011"
     },
 ]
-
 
 export default function RecommendedStylesSection() {
     return (
