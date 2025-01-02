@@ -6,6 +6,7 @@ export const IndexStyles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 15,
         backgroundColor: '#F9F4EC',
+        position: 'relative',
     },
     title: {
         fontSize: 24,

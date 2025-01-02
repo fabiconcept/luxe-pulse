@@ -8,13 +8,13 @@ export default function ExtraPagesLayout() {
             <Stack
                 screenOptions={{
                     headerShown: false,
-                    animation: 'slide_from_right',
+                    animation: 'slide_from_bottom',
                 }}
             >
                 <Stack.Screen
                     name="productView"
                     options={{
-                        presentation: 'modal',
+                        presentation: 'fullScreenModal',
                         animation: 'slide_from_bottom'
                     }}
                 />

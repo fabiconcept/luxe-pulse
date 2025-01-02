@@ -2,6 +2,7 @@ import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import BlurView from '@/components/BlurView';
+import { Link } from 'expo-router';
 
 export default function BentoItem({ product }: {
     product: {
@@ -50,6 +51,10 @@ export default function BentoItem({ product }: {
                     </View>
                 </Pressable>
             </View>
+            <Link href={`/productView?id=${product.id}`} style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, height: "100%", width: "100%", }}>
+                <View style={{ height: "100%", width: "100%", }}>
+                </View>
+            </Link>
             <BlurView intensity={30} tint="dark" style={styles.informationCard}>
                 <Text style={styles.title}>{product.title}</Text>
                 <Text style={styles.price}>${product.price}</Text>
@@ -75,6 +80,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        zIndex: 3
     },
     ratingContainer: {
         flexDirection: 'row',
@@ -114,6 +120,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
+        zIndex: 2
     },
     title: {
         color: '#fff',
