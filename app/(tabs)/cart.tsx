@@ -2,6 +2,7 @@ import { CategoryStyles, IndexStyles } from '@/Styles';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FavouriteBtn from '../Components/Home/FavouriteBtn';
+import Items from '../Components/Cart/CartItems';
 
 export default function Cart() {
   return (
@@ -10,8 +11,8 @@ export default function Cart() {
         <Text style={[CategoryStyles.headerText]}>Cart (03)</Text>
         <FavouriteBtn extraStyle={{ padding: 10 }} />
       </View>
-      <ScrollView>
-
+      <ScrollView> 
+        <Items />
       </ScrollView>
     </SafeAreaView>
   );

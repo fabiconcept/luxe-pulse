@@ -5,7 +5,9 @@ export const demoProducts = [
         price: '12.99',
         image: require('@/assets/images/jacket-1.png'),
         rating: 4.6,
-        bgColor: "#ff000033"
+        bgColor: "#ff000033",
+        size: 'M',
+        color: 'Red'
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ export const demoProducts = [
         price: '29.99',
         image: require('@/assets/images/jacket-2.png'),
         rating: 4.6,
-        bgColor: "#00A2E833"
+        bgColor: "#00A2E833",
+        size: 'L',
+        color: 'Blue'
     },
     {
         id: 3,
@@ -21,7 +25,9 @@ export const demoProducts = [
         price: '49.99',
         image: require('@/assets/images/jacket-3.png'),
         rating: 4.6,
-        bgColor: "#FFC90E33"
+        bgColor: "#FFC90E33",
+        size: 'XL',
+        color: 'Yellow'
     },
     {
         id: 4,
@@ -29,7 +35,9 @@ export const demoProducts = [
         price: '9.99',
         image: require('@/assets/images/jacket-4.png'),
         rating: 4.6,
-        bgColor: "#0000ff33"
+        bgColor: "#0000ff33",
+        size: 'S',
+        color: 'Navy'
     },
     {
         id: 5,
@@ -37,7 +45,9 @@ export const demoProducts = [
         price: '69.99',
         image: require('@/assets/images/jacket-5.png'),
         rating: 4.6,
-        bgColor: "#00000011"
+        bgColor: "#00000011",
+        size: 'M',
+        color: 'Black'
     },
     {
         id: 6,
@@ -45,7 +55,9 @@ export const demoProducts = [
         price: '99.99',
         image: require('@/assets/images/jacket-1.png'),
         rating: 4.6,
-        bgColor: "#ff000033"
+        bgColor: "#ff000033",
+        size: 'L',
+        color: 'Red'
     },
     {
         id: 7,
@@ -53,7 +65,9 @@ export const demoProducts = [
         price: '19.99',
         image: require('@/assets/images/jacket-2.png'),
         rating: 4.6,
-        bgColor: "#00A2E833"
+        bgColor: "#00A2E833",
+        size: 'XL',
+        color: 'Blue'
     },
     {
         id: 8,
@@ -61,7 +75,9 @@ export const demoProducts = [
         price: '14.99',
         image: require('@/assets/images/jacket-3.png'),
         rating: 4.6,
-        bgColor: "#FFC90E33"
+        bgColor: "#FFC90E33",
+        size: 'M',
+        color: 'Yellow'
     },
     {
         id: 9,
@@ -69,7 +85,9 @@ export const demoProducts = [
         price: '5.99',
         image: require('@/assets/images/jacket-4.png'),
         rating: 4.6,
-        bgColor: "#0000ff33"
+        bgColor: "#0000ff33",
+        size: 'S',
+        color: 'Navy'
     },
     {
         id: 10,
@@ -77,6 +95,10 @@ export const demoProducts = [
         price: '7.99',
         image: require('@/assets/images/jacket-5.png'),
         rating: 4.6,
-        bgColor: "#00000011"
+        bgColor: "#00000011",
+        size: 'L',
+        color: 'Black'
     },
 ]
+
+export type Product = typeof demoProducts[0];
