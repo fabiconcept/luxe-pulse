@@ -1,5 +1,5 @@
 import { IndexStyles } from '@/Styles';
-import { Dimensions, Image, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { Dimensions, StatusBar, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { BackBtn } from '../Components/Product View/BackBtn';
 import FavouriteBtn from '../Components/Home/FavouriteBtn';
